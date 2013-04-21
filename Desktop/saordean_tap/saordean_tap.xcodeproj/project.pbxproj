@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F212FF3617010FA90027683E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F212FF3517010FA90027683E /* UIKit.framework */; };
+		F212FF3817010FA90027683E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F212FF3717010FA90027683E /* Foundation.framework */; };
+		F212FF3A17010FA90027683E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F212FF3917010FA90027683E /* CoreGraphics.framework */; };
+		F212FF4017010FA90027683E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F212FF3E17010FA90027683E /* InfoPlist.strings */; };
+		F212FF4217010FA90027683E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F212FF4117010FA90027683E /* main.m */; };
+		F212FF4617010FA90027683E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F212FF4517010FA90027683E /* AppDelegate.m */; };
+		F212FF4817010FA90027683E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F212FF4717010FA90027683E /* Default.png */; };
+		F212FF4A17010FA90027683E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F212FF4917010FA90027683E /* Default@2x.png */; };
+		F212FF4C17010FA90027683E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F212FF4B17010FA90027683E /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F212FF3217010FA90027683E /* saordean_tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saordean_tap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F212FF3517010FA90027683E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F212FF3717010FA90027683E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F212FF3917010FA90027683E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F212FF3D17010FA90027683E /* saordean_tap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "saordean_tap-Info.plist"; sourceTree = "<group>"; };
+		F212FF3F17010FA90027683E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F212FF4117010FA90027683E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F212FF4317010FA90027683E /* saordean_tap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "saordean_tap-Prefix.pch"; sourceTree = "<group>"; };
+		F212FF4417010FA90027683E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F212FF4517010FA90027683E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F212FF4717010FA90027683E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F212FF4917010FA90027683E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F212FF4B17010FA90027683E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F212FF2F17010FA90027683E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F212FF3617010FA90027683E /* UIKit.framework in Frameworks */,
+				F212FF3817010FA90027683E /* Foundation.framework in Frameworks */,
+				F212FF3A17010FA90027683E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F212FF2917010FA90027683E = {
+			isa = PBXGroup;
+			children = (
+				F212FF3B17010FA90027683E /* saordean_tap */,
+				F212FF3417010FA90027683E /* Frameworks */,
+				F212FF3317010FA90027683E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F212FF3317010FA90027683E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F212FF3217010FA90027683E /* saordean_tap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F212FF3417010FA90027683E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F212FF3517010FA90027683E /* UIKit.framework */,
+				F212FF3717010FA90027683E /* Foundation.framework */,
+				F212FF3917010FA90027683E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F212FF3B17010FA90027683E /* saordean_tap */ = {
+			isa = PBXGroup;
+			children = (
+				F212FF4417010FA90027683E /* AppDelegate.h */,
+				F212FF4517010FA90027683E /* AppDelegate.m */,
+				F212FF3C17010FA90027683E /* Supporting Files */,
+			);
+			path = saordean_tap;
+			sourceTree = "<group>";
+		};
+		F212FF3C17010FA90027683E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F212FF3D17010FA90027683E /* saordean_tap-Info.plist */,
+				F212FF3E17010FA90027683E /* InfoPlist.strings */,
+				F212FF4117010FA90027683E /* main.m */,
+				F212FF4317010FA90027683E /* saordean_tap-Prefix.pch */,
+				F212FF4717010FA90027683E /* Default.png */,
+				F212FF4917010FA90027683E /* Default@2x.png */,
+				F212FF4B17010FA90027683E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F212FF3117010FA90027683E /* saordean_tap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F212FF4F17010FA90027683E /* Build configuration list for PBXNativeTarget "saordean_tap" */;
+			buildPhases = (
+				F212FF2E17010FA90027683E /* Sources */,
+				F212FF2F17010FA90027683E /* Frameworks */,
+				F212FF3017010FA90027683E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = saordean_tap;
+			productName = saordean_tap;
+			productReference = F212FF3217010FA90027683E /* saordean_tap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F212FF2A17010FA90027683E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Gerald Dean Taylor Kendrick";
+			};
+			buildConfigurationList = F212FF2D17010FA90027683E /* Build configuration list for PBXProject "saordean_tap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F212FF2917010FA90027683E;
+			productRefGroup = F212FF3317010FA90027683E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F212FF3117010FA90027683E /* saordean_tap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F212FF3017010FA90027683E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F212FF4017010FA90027683E /* InfoPlist.strings in Resources */,
+				F212FF4817010FA90027683E /* Default.png in Resources */,
+				F212FF4A17010FA90027683E /* Default@2x.png in Resources */,
+				F212FF4C17010FA90027683E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F212FF2E17010FA90027683E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F212FF4217010FA90027683E /* main.m in Sources */,
+				F212FF4617010FA90027683E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F212FF3E17010FA90027683E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F212FF3F17010FA90027683E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F212FF4D17010FA90027683E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F212FF4E17010FA90027683E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F212FF5017010FA90027683E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "saordean_tap/saordean_tap-Prefix.pch";
+				INFOPLIST_FILE = "saordean_tap/saordean_tap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F212FF5117010FA90027683E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "saordean_tap/saordean_tap-Prefix.pch";
+				INFOPLIST_FILE = "saordean_tap/saordean_tap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F212FF2D17010FA90027683E /* Build configuration list for PBXProject "saordean_tap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F212FF4D17010FA90027683E /* Debug */,
+				F212FF4E17010FA90027683E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F212FF4F17010FA90027683E /* Build configuration list for PBXNativeTarget "saordean_tap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F212FF5017010FA90027683E /* Debug */,
+				F212FF5117010FA90027683E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F212FF2A17010FA90027683E /* Project object */;
+}
