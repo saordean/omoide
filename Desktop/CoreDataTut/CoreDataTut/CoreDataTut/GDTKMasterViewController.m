@@ -7,8 +7,8 @@
 //
 
 #import "GDTKMasterViewController.h"
-
 #import "GDTKDetailViewController.h"
+#import "event.h"
 
 @interface GDTKMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -28,11 +28,37 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Set the title.
+    self.title = @"Locations";
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addEvent)];
     self.navigationItem.rightBarButtonItem = addButton;
+
+    [self.locationManager startUpdatingLocation];
+
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Event"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"latitude>=30.0"];
+    [request setPredicate:predicate];
+    NSError *error = nil;
+    
+    NSArray *results = [self.managedObjectContext executeFetchRequest:request error:&error];
+    if (error) {
+        NSLOG(@"fetchError: %@", error);
+    }
+    
+    if (results.count > 0) {
+        Event *event = [results objectAtIndex:0];
+        NSLog(@"Result objects are: %@", results);
+    } else {
+        NSLog(@"Nothing");
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,7 +75,7 @@
     
     // If appropriate, configure the new managed object.
     // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
+    [newManagedObject setValue:[NSDate date] forKey:@"creationDate"];
     
     // Save the context.
     NSError *error = nil;
@@ -144,7 +170,7 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"creationDate" ascending:NO];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -226,10 +252,60 @@
 }
  */
 
+
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    cell.textLabel.text = [[object valueForKey:@"creationDate"] description];
+}
+
+
+#pragma mark - Core Locations Methods
+// Added 4/16/2013 GDTK
+- (CLLocationManager *)locationManager {
+    
+    if (_locationManager != nil) {
+        return _locationManager;
+    }
+    
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    _locationManager.delegate = self;
+    
+    return _locationManager;
+}
+
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation {
+    self.addButton.enabled = YES;
+}
+
+
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error {
+    self.addButton.enabled = NO;
+}
+
+
+-(void) addEvent {
+    CLLocation *location = [self.locationManager location];
+    if (!location) {
+        return;
+    }
+    Event *event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    
+        CLLocationCoordinate2D coord = location.coordinate;
+    
+    [event setLatitude:[NSNumber numberWithDouble:coord.latitude]];
+    [event setLongitude:[NSNumber numberWithDouble:coord.longitude]];
+    [event setCreationDate:[NSDate date]];
+    
+    NSError *error = nil;
+    if (![self.managedObjectContext save:&error] ) {
+       NSLog(@"save errored: %@", error);
+    }
 }
 
 @end

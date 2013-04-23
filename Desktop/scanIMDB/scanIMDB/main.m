@@ -1,8 +1,8 @@
 //
 //  main.m
-//  scanIMDB
+//  AFNetworking
 //
-//  Created by JerryTaylorKendrick on 4/11/13.
+//  Created by JerryTaylorKendrick on 4/9/13.
 //  Copyright (c) 2013 Jerry Taylor Kendrick. All rights reserved.
 //
 

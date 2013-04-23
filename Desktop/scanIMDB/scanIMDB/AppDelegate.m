@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  scanIMDB
 //
-//  Created by JerryTaylorKendrick on 4/11/13.
+//  Created by JerryTaylorKendrick on 4/9/13.
 //  Copyright (c) 2013 Jerry Taylor Kendrick. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "scanIMDBViewController.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,19 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //GDTK
+    scanIMDBViewController *viewController = [[scanIMDBViewController alloc] initWithNibName:@"scanIMDBViewController" bundle:[NSBundle mainBundle]];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+                                         
+    self.window.rootViewController = navigationController;
+                                         
+    [self.window makeKeyAndVisible];
+
+    // End GDTK
+    
+    
     return YES;
 }
 

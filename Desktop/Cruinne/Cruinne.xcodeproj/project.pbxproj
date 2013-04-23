@@ -16,6 +16,11 @@
 		F21FD6A017035CDD00630DD9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F21FD69F17035CDD00630DD9 /* Default.png */; };
 		F21FD6A217035CDD00630DD9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F21FD6A117035CDD00630DD9 /* Default@2x.png */; };
 		F21FD6A417035CDD00630DD9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F21FD6A317035CDD00630DD9 /* Default-568h@2x.png */; };
+		F21FD6AE17035E8800630DD9 /* CruinneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21FD6AC17035E8800630DD9 /* CruinneViewController.xib */; };
+		F21FD6B217036C4D00630DD9 /* Cruinne3.png in Resources */ = {isa = PBXBuildFile; fileRef = F21FD6B117036C4D00630DD9 /* Cruinne3.png */; };
+		F21FD6B417036C6300630DD9 /* Cruinne1.png in Resources */ = {isa = PBXBuildFile; fileRef = F21FD6B317036C6300630DD9 /* Cruinne1.png */; };
+		F21FD6B617036C6D00630DD9 /* Cruinne2.png in Resources */ = {isa = PBXBuildFile; fileRef = F21FD6B517036C6D00630DD9 /* Cruinne2.png */; };
+		F21FD6B817036FD300630DD9 /* CruinneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21FD6B717036FD300630DD9 /* CruinneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,12 @@
 		F21FD69F17035CDD00630DD9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F21FD6A117035CDD00630DD9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F21FD6A317035CDD00630DD9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F21FD6AA17035E8800630DD9 /* CruinneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CruinneViewController.h; sourceTree = "<group>"; };
+		F21FD6AC17035E8800630DD9 /* CruinneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CruinneViewController.xib; sourceTree = "<group>"; };
+		F21FD6B117036C4D00630DD9 /* Cruinne3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cruinne3.png; sourceTree = SOURCE_ROOT; };
+		F21FD6B317036C6300630DD9 /* Cruinne1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cruinne1.png; sourceTree = SOURCE_ROOT; };
+		F21FD6B517036C6D00630DD9 /* Cruinne2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cruinne2.png; sourceTree = SOURCE_ROOT; };
+		F21FD6B717036FD300630DD9 /* CruinneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CruinneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +89,13 @@
 		F21FD69317035CDD00630DD9 /* Cruinne */ = {
 			isa = PBXGroup;
 			children = (
+				F21FD6B01703628600630DD9 /* images */,
 				F21FD69C17035CDD00630DD9 /* AppDelegate.h */,
 				F21FD69D17035CDD00630DD9 /* AppDelegate.m */,
 				F21FD69417035CDD00630DD9 /* Supporting Files */,
+				F21FD6AA17035E8800630DD9 /* CruinneViewController.h */,
+				F21FD6AC17035E8800630DD9 /* CruinneViewController.xib */,
+				F21FD6B717036FD300630DD9 /* CruinneViewController.m */,
 			);
 			path = Cruinne;
 			sourceTree = "<group>";
@@ -97,6 +112,16 @@
 				F21FD6A317035CDD00630DD9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F21FD6B01703628600630DD9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F21FD6B517036C6D00630DD9 /* Cruinne2.png */,
+				F21FD6B317036C6300630DD9 /* Cruinne1.png */,
+				F21FD6B117036C4D00630DD9 /* Cruinne3.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +179,10 @@
 				F21FD6A017035CDD00630DD9 /* Default.png in Resources */,
 				F21FD6A217035CDD00630DD9 /* Default@2x.png in Resources */,
 				F21FD6A417035CDD00630DD9 /* Default-568h@2x.png in Resources */,
+				F21FD6AE17035E8800630DD9 /* CruinneViewController.xib in Resources */,
+				F21FD6B217036C4D00630DD9 /* Cruinne3.png in Resources */,
+				F21FD6B417036C6300630DD9 /* Cruinne1.png in Resources */,
+				F21FD6B617036C6D00630DD9 /* Cruinne2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +195,7 @@
 			files = (
 				F21FD69A17035CDD00630DD9 /* main.m in Sources */,
 				F21FD69E17035CDD00630DD9 /* AppDelegate.m in Sources */,
+				F21FD6B817036FD300630DD9 /* CruinneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

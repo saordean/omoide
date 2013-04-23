@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AFNViewController.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,20 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //GDTK
+    AFNViewController *viewController = [[AFNViewController alloc] initWithNibName:@"AFNViewController" bundle:[NSBundle mainBundle]];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+                                         
+    self.window.rootViewController = navigationController;
+                                         
+    [self.window makeKeyAndVisible];
+
+    
+    // End GDTK
+    
+    
     return YES;
 }
 

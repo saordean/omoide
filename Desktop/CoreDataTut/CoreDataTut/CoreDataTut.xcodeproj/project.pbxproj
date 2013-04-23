@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21D2597171F5F6400859702 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D2596171F5F6400859702 /* Event.m */; };
 		F2684486171E24B100440214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2684485171E24B100440214 /* UIKit.framework */; };
 		F2684488171E24B100440214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2684487171E24B100440214 /* Foundation.framework */; };
 		F268448A171E24B100440214 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2684489171E24B100440214 /* CoreGraphics.framework */; };
@@ -22,9 +23,12 @@
 		F26844A7171E24B100440214 /* GDTKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26844A6171E24B100440214 /* GDTKDetailViewController.m */; };
 		F26844AA171E24B100440214 /* GDTKMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26844A8171E24B100440214 /* GDTKMasterViewController.xib */; };
 		F26844AD171E24B100440214 /* GDTKDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26844AB171E24B100440214 /* GDTKDetailViewController.xib */; };
+		F26844B4171E252F00440214 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26844B3171E252F00440214 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F21D2595171F5F6400859702 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		F21D2596171F5F6400859702 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		F2684482171E24B100440214 /* CoreDataTut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2684485171E24B100440214 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2684487171E24B100440214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,6 +50,7 @@
 		F26844A6171E24B100440214 /* GDTKDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDTKDetailViewController.m; sourceTree = "<group>"; };
 		F26844A9171E24B100440214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GDTKMasterViewController.xib; sourceTree = "<group>"; };
 		F26844AC171E24B100440214 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GDTKDetailViewController.xib; sourceTree = "<group>"; };
+		F26844B3171E252F00440214 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26844B4171E252F00440214 /* CoreLocation.framework in Frameworks */,
 				F2684486171E24B100440214 /* UIKit.framework in Frameworks */,
 				F2684488171E24B100440214 /* Foundation.framework in Frameworks */,
 				F268448A171E24B100440214 /* CoreGraphics.framework in Frameworks */,
@@ -66,6 +72,7 @@
 		F2684479171E24B100440214 = {
 			isa = PBXGroup;
 			children = (
+				F26844B3171E252F00440214 /* CoreLocation.framework */,
 				F268448D171E24B100440214 /* CoreDataTut */,
 				F2684484171E24B100440214 /* Frameworks */,
 				F2684483171E24B100440214 /* Products */,
@@ -103,6 +110,8 @@
 				F26844A8171E24B100440214 /* GDTKMasterViewController.xib */,
 				F26844AB171E24B100440214 /* GDTKDetailViewController.xib */,
 				F268449F171E24B100440214 /* CoreDataTut.xcdatamodeld */,
+				F21D2595171F5F6400859702 /* Event.h */,
+				F21D2596171F5F6400859702 /* Event.m */,
 				F268448E171E24B100440214 /* Supporting Files */,
 			);
 			path = CoreDataTut;
@@ -195,6 +204,7 @@
 				F26844A1171E24B100440214 /* CoreDataTut.xcdatamodeld in Sources */,
 				F26844A4171E24B100440214 /* GDTKMasterViewController.m in Sources */,
 				F26844A7171E24B100440214 /* GDTKDetailViewController.m in Sources */,
+				F21D2597171F5F6400859702 /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +335,7 @@
 				F26844B2171E24B100440214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

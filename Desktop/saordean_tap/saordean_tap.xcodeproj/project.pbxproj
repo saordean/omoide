@@ -16,6 +16,16 @@
 		F212FF4817010FA90027683E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F212FF4717010FA90027683E /* Default.png */; };
 		F212FF4A17010FA90027683E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F212FF4917010FA90027683E /* Default@2x.png */; };
 		F212FF4C17010FA90027683E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F212FF4B17010FA90027683E /* Default-568h@2x.png */; };
+		F212FF551701108F0027683E /* saordean_tapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F212FF531701108F0027683E /* saordean_tapViewController.m */; };
+		F212FF561701108F0027683E /* saordean_tapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F212FF541701108F0027683E /* saordean_tapViewController.xib */; };
+		F2C07DF317020BEA007DCA74 /* increment.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C07DEF17020BEA007DCA74 /* increment.png */; };
+		F2C07DF417020BEA007DCA74 /* tap_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C07DF017020BEA007DCA74 /* tap_logo.png */; };
+		F2C07DF517020BEA007DCA74 /* tap_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C07DF117020BEA007DCA74 /* tap_logo@2x.png */; };
+		F2C07DF617020BEA007DCA74 /* tapbg.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C07DF217020BEA007DCA74 /* tapbg.png */; };
+		F2C07DF817020C02007DCA74 /* decrement.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C07DF717020C02007DCA74 /* decrement.png */; };
+		F2C07DFA17023509007DCA74 /* anastasi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C07DF917023509007DCA74 /* anastasi.png */; };
+		F2F570BE1702507F0047CB5C /* Great_Horned_Owl_57.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F570BD1702507F0047CB5C /* Great_Horned_Owl_57.png */; };
+		F2F570C0170250900047CB5C /* Great_Horned_Owl_114.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F570BF170250900047CB5C /* Great_Horned_Owl_114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,17 @@
 		F212FF4717010FA90027683E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F212FF4917010FA90027683E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F212FF4B17010FA90027683E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F212FF521701108F0027683E /* saordean_tapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saordean_tapViewController.h; sourceTree = "<group>"; };
+		F212FF531701108F0027683E /* saordean_tapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = saordean_tapViewController.m; sourceTree = "<group>"; };
+		F212FF541701108F0027683E /* saordean_tapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = saordean_tapViewController.xib; sourceTree = "<group>"; };
+		F2C07DEF17020BEA007DCA74 /* increment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = increment.png; sourceTree = "<group>"; };
+		F2C07DF017020BEA007DCA74 /* tap_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap_logo.png; sourceTree = "<group>"; };
+		F2C07DF117020BEA007DCA74 /* tap_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap_logo@2x.png"; sourceTree = "<group>"; };
+		F2C07DF217020BEA007DCA74 /* tapbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapbg.png; sourceTree = "<group>"; };
+		F2C07DF717020C02007DCA74 /* decrement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decrement.png; sourceTree = "<group>"; };
+		F2C07DF917023509007DCA74 /* anastasi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anastasi.png; sourceTree = "<group>"; };
+		F2F570BD1702507F0047CB5C /* Great_Horned_Owl_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Great_Horned_Owl_57.png; sourceTree = "<group>"; };
+		F2F570BF170250900047CB5C /* Great_Horned_Owl_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Great_Horned_Owl_114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +99,12 @@
 		F212FF3B17010FA90027683E /* saordean_tap */ = {
 			isa = PBXGroup;
 			children = (
+				F212FF57170115F80027683E /* images */,
 				F212FF4417010FA90027683E /* AppDelegate.h */,
 				F212FF4517010FA90027683E /* AppDelegate.m */,
+				F212FF521701108F0027683E /* saordean_tapViewController.h */,
+				F212FF531701108F0027683E /* saordean_tapViewController.m */,
+				F212FF541701108F0027683E /* saordean_tapViewController.xib */,
 				F212FF3C17010FA90027683E /* Supporting Files */,
 			);
 			path = saordean_tap;
@@ -97,6 +122,21 @@
 				F212FF4B17010FA90027683E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F212FF57170115F80027683E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F2F570BF170250900047CB5C /* Great_Horned_Owl_114.png */,
+				F2F570BD1702507F0047CB5C /* Great_Horned_Owl_57.png */,
+				F2C07DF917023509007DCA74 /* anastasi.png */,
+				F2C07DF717020C02007DCA74 /* decrement.png */,
+				F2C07DEF17020BEA007DCA74 /* increment.png */,
+				F2C07DF017020BEA007DCA74 /* tap_logo.png */,
+				F2C07DF117020BEA007DCA74 /* tap_logo@2x.png */,
+				F2C07DF217020BEA007DCA74 /* tapbg.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +194,15 @@
 				F212FF4817010FA90027683E /* Default.png in Resources */,
 				F212FF4A17010FA90027683E /* Default@2x.png in Resources */,
 				F212FF4C17010FA90027683E /* Default-568h@2x.png in Resources */,
+				F212FF561701108F0027683E /* saordean_tapViewController.xib in Resources */,
+				F2C07DF317020BEA007DCA74 /* increment.png in Resources */,
+				F2C07DF417020BEA007DCA74 /* tap_logo.png in Resources */,
+				F2C07DF517020BEA007DCA74 /* tap_logo@2x.png in Resources */,
+				F2C07DF617020BEA007DCA74 /* tapbg.png in Resources */,
+				F2C07DF817020C02007DCA74 /* decrement.png in Resources */,
+				F2C07DFA17023509007DCA74 /* anastasi.png in Resources */,
+				F2F570BE1702507F0047CB5C /* Great_Horned_Owl_57.png in Resources */,
+				F2F570C0170250900047CB5C /* Great_Horned_Owl_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +215,7 @@
 			files = (
 				F212FF4217010FA90027683E /* main.m in Sources */,
 				F212FF4617010FA90027683E /* AppDelegate.m in Sources */,
+				F212FF551701108F0027683E /* saordean_tapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +332,7 @@
 				F212FF5117010FA90027683E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
